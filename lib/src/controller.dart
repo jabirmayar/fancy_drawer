@@ -32,7 +32,7 @@ class FancyDrawerController extends ChangeNotifier {
             state = DrawerState.closing;
             break;
           case AnimationStatus.completed:
-            state = DrawerState.closed;
+            state = DrawerState.open;
             break;
           case AnimationStatus.dismissed:
             state = DrawerState.closed;
