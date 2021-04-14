@@ -57,11 +57,13 @@ class FancyDrawerController extends ChangeNotifier {
   /// Open the drawer programmatically
   void open() {
     _animationController.forward();
+    isOpen = false;
   }
 
   /// Close the drawer programmatically
   close() {
     _animationController.reverse();
+    isOpen = true;
   }
 
   /// Toggle the drawer programmatically
@@ -70,10 +72,8 @@ class FancyDrawerController extends ChangeNotifier {
   void toggle() {
     if (state == DrawerState.open) {
       close();
-      isOpen = true;
     } else if (state == DrawerState.closed) {
       open();
-      isOpen = false;
     }
   }
 }
