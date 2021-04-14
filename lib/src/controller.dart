@@ -10,6 +10,7 @@ class FancyDrawerController extends ChangeNotifier {
   final Duration duration;
   final AnimationController _animationController;
   DrawerState state = DrawerState.closed;
+  bool isOpen = false;
 
   FancyDrawerController(
       {@required this.vsync, this.duration = const Duration(milliseconds: 250)})
@@ -69,8 +70,10 @@ class FancyDrawerController extends ChangeNotifier {
   void toggle() {
     if (state == DrawerState.open) {
       close();
+      isOpen = true;
     } else if (state == DrawerState.closed) {
       open();
+      isOpen = false;
     }
   }
 }
