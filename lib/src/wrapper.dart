@@ -63,7 +63,7 @@ class _FancyDrawerWrapperState extends State<FancyDrawerWrapper> {
           child: GestureDetector(
             onTap: () {
               if (widget.hideOnContentTap) {
-                widget.controller.close();
+              //  widget.controller.close();
               }
             },
             child: widget.child,
