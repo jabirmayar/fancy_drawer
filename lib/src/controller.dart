@@ -13,7 +13,7 @@ class FancyDrawerController extends ChangeNotifier {
   bool isOpen = false;
 
   FancyDrawerController(
-      {@required this.vsync, this.duration = const Duration(milliseconds: 250)})
+      {required this.vsync, this.duration = const Duration(milliseconds: 250)})
       : _animationController =
             AnimationController(vsync: vsync, duration: duration) {
     _initController();
