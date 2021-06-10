@@ -21,7 +21,7 @@ class FancyDrawerWrapper extends StatefulWidget {
   final double cornerRadius;
 
   const FancyDrawerWrapper({
-    Key key,
+    Key? key,
     @required this.drawerItems,
     this.backgroundColor = Colors.white,
     @required this.child,
