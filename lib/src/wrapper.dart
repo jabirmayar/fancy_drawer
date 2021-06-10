@@ -22,10 +22,10 @@ class FancyDrawerWrapper extends StatefulWidget {
 
   const FancyDrawerWrapper({
     Key? key,
-    @required this.drawerItems,
+    required this.drawerItems,
     this.backgroundColor = Colors.white,
-    @required this.child,
-    @required this.controller,
+    required this.child,
+    required this.controller,
     this.itemGap = 10.0,
     this.hideOnContentTap = true,
     this.cornerRadius = 8.0,
